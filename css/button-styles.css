@@ -1,0 +1,24 @@
+a.button_back{
+    display:inline-block;
+    border:0;
+    padding:0;
+    margin:auto;
+    height:100px;
+    width:100px;
+    background-image:url('../buttons/Bra_btn_bka.gif');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+a.button_forw{
+    display:inline-block;
+    border:0;
+    padding:0;
+    margin:auto;
+    height:100px;
+    width:100px;
+    background-image:url('../buttons/Bra_btn_fwa.gif');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+}
