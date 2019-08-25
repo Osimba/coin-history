@@ -163,21 +163,21 @@
 						
 						<?php 
 							$coinResults = $ancientObj->getAllCoins();
-							foreach($coinResults as $coinTable => $row) {
+							foreach($coinResults as $coinRow) {
 						?>
 
 						<div class="col-md-4 mb-2">
 							<div class="card-deck">
 								<div class="card border-secondary">
-									<img src="<?= $row['image']; ?>" class="card-img-top">
+									<img src="<?= $coinRow['image']; ?>" class="card-img-top">
 									<div class="card-body">
-										<p class="cart-title"><strong>Era:</strong> <?= $row['era']; ?></p>
-										<p class="cart-title"><strong>Civilization:</strong> <?= $row['civilization']; ?></p>
-										<p class="cart-title"><strong>Time Issued:</strong> <?= $row['time_issued']; ?></p>
-										<p class="cart-title"><strong>Metal Composition:</strong> <?= $row['metal_composition']; ?></p>
-										<p class="cart-title"><strong>Denomination:</strong> <?= $row['denomination']; ?></p>
-										<p class="cart-title"><strong>Historical Event:</strong> <?= $row['historical_event']; ?></p>
-										<p class="cart-title"><strong>Ruler:</strong> <?= $row['ruler']; ?></p>
+										<p class="cart-title"><strong>Era:</strong> <?= $coinRow['era']; ?></p>
+										<p class="cart-title"><strong>Civilization:</strong> <?= $coinRow['civilization']; ?></p>
+										<p class="cart-title"><strong>Time Issued:</strong> <?= $coinRow['time_issued']; ?></p>
+										<p class="cart-title"><strong>Metal Composition:</strong> <?= $coinRow['metal_composition']; ?></p>
+										<p class="cart-title"><strong>Denomination:</strong> <?= $coinRow['denomination']; ?></p>
+										<p class="cart-title"><strong>Historical Event:</strong> <?= $coinRow['historical_event']; ?></p>
+										<p class="cart-title"><strong>Ruler:</strong> <?= $coinRow['ruler']; ?></p>
 
 									</div>	
 								</div>
@@ -202,7 +202,7 @@
 	
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script type="text/javascript">
-		$(document). ready(function() {
+		$(document).ready(function() {
 			// object will contain all the checked categories
 			var coinFilterInfo = {era: [], civilization: [], time_issued: [], metal_composition: [], denomination: [], historical_event: [], ruler: []};
 
